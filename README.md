@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add your solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add your live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/order-summary-component-solution-using-tailwind-8dmeB5RPd0)
+- Live Site URL: [Add your live site URL here](https://order-summary-component-challenge-rho.vercel.app/)
 
 ## My Process
 
