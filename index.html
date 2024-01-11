@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "375px",
+            md: "768px",
+            lg: "1440px",
+          },
+          extend: {
+            colors: {
+              "pale-blue": "hsl(225, 100%, 94%)",
+              "bright-blue": "hsl(245, 75%, 52%)",
+              "very-pale-blue": "hsl(225, 100%, 98%)",
+              "desaturated-blue": "hsl(224, 23%, 55%)",
+              "dark-blue": "hsl(223, 47%, 23%)",
+            },
+            fontFamily: {
+              sans: ['"Red Hat Display"', "sans-serif"],
+            },
+            backgroundImage: {
+              desktop: "url('/images/pattern-background-desktop.svg')",
+              mobile: "url('/images/pattern-background-mobile.svg')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body
+    class="box-border m-0 p-0 font-sans bg-repeat-x bg-no-repeat bg-top bg-pale-blue bg-mobile md:bg-desktop"
+  >
+    <main>
+      <div class="flex flex-col justify-center items-center min-h-screen">
+        <div class="md:w-[450px] w-[330px] bg-white shadow-xl rounded-[20px]">
+          <img
+            src="images/illustration-hero.svg"
+            alt="hero"
+            class="rounded-t-[20px]"
+          />
+          <section class="text-center md:pt-[43px] pt-[29px]">
+            <h1
+              class="md:text-[1.75rem] mb-4 text-[1.38rem] font-black text-dark-blue"
+            >
+              Order Summary
+            </h1>
+            <p
+              class="text-desaturated-blue md:px-12 px-8 text-[16px] leading-[25px] mb-6"
+            >
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+          </section>
+          <div class="flex justify-center items-center">
+            <div
+              class="flex flex-row bg-very-pale-blue md:w-[352px] w-[280px] items-center rounded-[10px]"
+            >
+              <img
+                src="/images/icon-music.svg"
+                alt=""
+                class="md:p-6 md:mr-[-4px] p-4"
+              />
+              <div class="flex flex-col">
+                <p class="font-black md:mt-[-4px] md:mb-[4px] text-dark-blue">
+                  Annual Plan
+                </p>
+                <p class="text-desaturated-blue">$59.99/year</p>
+              </div>
+              <p
+                class="md:ml-[92px] ml-[40px] text-sm font-black underline text-bright-blue hover:text-[#766cf1] cursor-pointer"
+              >
+                Change
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center md:py-8 py-6">
+            <button
+              class="bg-bright-blue hover:bg-[#766cf1] text-white font-bold rounded-[10px] text-[15.5px] py-3 md:px-[100px] px-[65px] shadow-[0_2.8px_2.2px_rgba(56,41,224,0.034),_0_6.7px_5.3px_rgba(56,41,224,0.048),_0_12.5px_10px_rgba(56,41,224,0.06),_0_22.3px_17.9px_rgba(56,41,224,0.072),_0_41.8px_33.4px_rgba(56,41,224,0.086)]"
+            >
+              Proceed to Payment
+            </button>
+            <p
+              class="text-desaturated-blue text-[15px] font-bold md:mt-8 mt-6 mb-3 hover:text-dark-blue cursor-pointer"
+            >
+              Cancel Order
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
